@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Stuff!</title>
+  <script type="text/javascript" src="/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="/scripts/client.js"></script>
+</head>
+<body>
+  <p>Give me some numbers and I'll calculate them!</p>
+  <div>
+    <form id="calc-form">
+      <input type="number" name="x" id="x" />
+      <select name="op">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mult">*</option>
+        <option value="div">&divide;</option>
+      </select>
+      <input type="number" name="y" id="y" />
+      <input type="submit" name="submit" value="Calculate" />
+    </form>
+    <div id="calc-container">
+      <h1 id="answer"></h1>
+    </div>
+  </div>
+</body>
+</html>
