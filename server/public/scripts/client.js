@@ -25,6 +25,12 @@ $(document).ready(function() {
   }
 
   function updateDOM(result) {
+    var answer = parseInt(result.answer);
+    if(answer < 0) {
+      $('#answer').addClass('negative');
+    } else {
+      $('#answer').removeClass('negative');
+    }
     $('#answer').text(result.answer);
   }
 
