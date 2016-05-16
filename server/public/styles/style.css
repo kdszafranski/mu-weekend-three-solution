@@ -1,0 +1,65 @@
+body {
+  font-size: 20px;
+  font-family: Tahoma, sans-serif;
+}
+
+#app-container {
+  margin: 10px;
+  padding: 12px;
+  border: 2px solid darkgray;
+  background-color: peachpuff;
+  border-radius: 3px;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+}
+
+.negative {
+  color: red;
+}
+
+input[type=number], .submit, select, #clear {
+  border: 2px solid gray;
+  display: inline-block;
+  font-size: 26px;
+  padding: 2px;
+  margin: auto;
+}
+
+input[type=number] {
+  text-align: right;
+  font-size: 26px;
+  line-height: 1;
+}
+
+select {
+  font-size: 20px;
+}
+
+.submit, #clear {
+  margin-left: 8px;
+  text-decoration: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+select:hover, .submit:hover, #clear:hover {
+  background-color: orange;
+}
+
+.submit:active, #clear:active {
+  background-color: green;
+  color: white;
+}
+
+#clear:active {
+  background-color: red;
+}
+
+select {
+  font-size: 30px;
+  padding: 4px;
+}

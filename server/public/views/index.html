@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Calculate Stuff!</title>
+  <title>The &Mu;&mu;-culator!</title>
   <script type="text/javascript" src="/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="/scripts/client.js"></script>
 
   <link rel="stylesheet" href="/styles/style.css" />
 </head>
 <body>
-  <p>Give me some numbers and I'll calculate them!</p>
-  <div>
+  <h1>The &Mu;&mu;-culator!</h1>
+  <div id="app-container">
+    <p>Enter two numbers and I'll calculate them!</p>
     <form id="calc-form">
       <input type="number" name="x" id="x" />
       <select name="op">
-        <option value="add">+</option>
-        <option value="sub">-</option>
-        <option value="mult">*</option>
+        <option value="add">&plus;</option>
+        <option value="sub">&minus;</option>
+        <option value="mult">&times;</option>
         <option value="div">&divide;</option>
       </select>
       <input type="number" name="y" id="y" />
-      <input type="submit" name="submit" value="Calculate" />
+      <input id="submit-form" class="submit" type="submit" name="submit" value="Calculate" />
     </form>
+    <button id="clear">Clear</button>
+
     <div id="calc-container">
-      <h1 id="answer"></h1>
+      <h2>Answer: <span id="answer"></span></h2>
     </div>
   </div>
 </body>
